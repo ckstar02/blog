@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCherryChronicles</title>
+  </head>
+  <body>
+    <!--light/dark toggle button-->
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <!--title -->
+    <h1 class="title"><span>Welcome to</span><br />The Cherry Chronicles</h1>
+    <!-- left side column-->
+    <div class="row">
+      <div class="column" style="background-color: #a4a7d3">
+        <h2>my first blog</h2>
+        <p>hoping to add an image here</p>
+      </div>
+      <!-- right side column with form-->
+      <div class="column" style="background-color: #bac0e6">
+            <form onsubmit="return checkForBlank()">
+                <div class="input-group">
+                  <label for="username">Username</label><br>
+                  <input type="text" name="username" id="username" placeholder="Enter your username" />
+                </div>
+                <div class="input-group">
+                  <label for="title">Title</label><br>
+                  <input type="text" name="title" id="title" placeholder="Enter your blog title" />
+                </div>
+                <div class="input-group">
+                  <label for="content">Content</label><br>
+                  <input type="text" name="content" id="content" placeholder="Enter your blog content" />
+                </div>
+                <div id="msg"></div>
+                <button id="submit">Submit</button>  
+            </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/logic.js"></script>
+    <script src="./assets/javascript/form.js"></script>
+    <script src="./assets/javascript/blog.js"></script>
+  </body>
+</html>
